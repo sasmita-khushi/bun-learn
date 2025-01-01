@@ -1,0 +1,160 @@
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" type="favicon"
+	href="/openiam-ui-static/images/common/favicon.ico?3.5.RELEASE" />
+<title>eConnect-SelfService</title>
+<link
+	href="/openiam-ui-static/css/common/style.css?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE"
+	rel="stylesheet" type="text/css" media="screen" />
+
+
+
+<script type="text/javascript"
+	src="/openiam-ui-static/assets/scripts/jquery-3.5.1.min.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE"></script>
+<script type="text/javascript"
+	src="/openiam-ui-static/assets/scripts/jquery-migrate-3.3.2.min.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE"></script>
+
+<script type="text/javascript"
+	src="/openiam-ui-static/_dynamic/openiamResourceBundle.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE"></script>
+<script type="text/javascript"
+	src="/openiam-ui-static/js/common/jquery.corner.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE"></script>
+<script type="text/javascript"
+	src="/openiam-ui-static/js/common/jquery.boxshadow.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE"></script>
+<script type="text/javascript"
+	src="/openiam-ui-static/js/common/openiam.common.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE"></script>
+<script type="text/javascript"
+	src="/openiam-ui-static/js/common/menutree.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE"></script>
+<script type="text/javascript"
+	src="/openiam-ui-static/js/common/outer.frame.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE"></script>
+<script type="text/javascript"
+	src="/openiam-ui-static/js/common/api/openiam.api.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE"></script>
+<script type="text/javascript"
+	src="/openiam-ui-static/js/common/browser.close.logout.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE"> </script>
+<script type="text/javascript"
+	src="/openiam-ui-static/js/selfservice/landingPageInfo.js?3.5.RELEASE?3.5.RELEASE?3.5.RELEASE"></script>
+
+<script type="text/javascript">
+			OPENIAM = window.OPENIAM || {};
+			OPENIAM.ENV = window.OPENIAM.ENV || {};
+			OPENIAM.ENV.MenuTree = {"id":"SELFSERVICE","name":"SELFSERVICE","url":"void(0);","displayName":"SELF SERVICE","risk":null,"order":0,"icon":null,"isPublic":true,"visible":true,"displayNameMap":{"11":{"id":"PTSELFSERVICE_MENU_DISPLAY","languageId":"11","referenceId":"SELFSERVICE","referenceType":"ResourceEntity.displayNameMap","value":"SELF SERVICE"},"1":{"id":"SELFSERVICE_MENU_DISPLAY","languageId":"1","referenceId":"SELFSERVICE","referenceType":"ResourceEntity.displayNameMap","value":"SELF SERVICE"},"2":{"id":"DESELFSERVICE_MENU_DISPLAY","languageId":"2","referenceId":"SELFSERVICE","referenceType":"ResourceEntity.displayNameMap","value":"SELF-SERVICE"},"4":{"id":"ESSELFSERVICE_MENU_DISPLAY","languageId":"4","referenceId":"SELFSERVICE","referenceType":"ResourceEntity.displayNameMap","value":"AUTO SERVICIO"},"8":{"id":"RUSELFSERVICE_MENU_DISPLAY","languageId":"8","referenceId":"SELFSERVICE","referenceType":"ResourceEntity.displayNameMap","value":"САМООБСЛУЖИВАНИЕ"},"9":{"id":"JPSELFSERVICE_MENU_DISPLAY","languageId":"9","referenceId":"SELFSERVICE","referenceType":"ResourceEntity.displayNameMap","value":"SELF SERVICE"},"10":{"id":"ZHSELFSERVICE_MENU_DISPLAY","languageId":"10","referenceId":"SELFSERVICE","referenceType":"ResourceEntity.displayNameMap","value":"自助服务"}},"firstChild":{"id":"SELFSERVICE_MYINFO","name":"SELFSERVICE_MYINFO","url":"/selfservice/myInfo.html","displayName":"My Info","risk":null,"order":1,"icon":"/openiam-ui-static/images/common/icons/menu7.png","isPublic":true,"visible":true,"displayNameMap":{"11":{"id":"PTSELFSERVICE_MYINFO_DESC","languageId":"11","referenceId":"SELFSERVICE_MYINFO","referenceType":"ResourceEntity.displayNameMap","value":"Minha informação"},"1":{"id":"SELFSERVICE_MYINFO_DESC","languageId":"1","referenceId":"SELFSERVICE_MYINFO","referenceType":"ResourceEntity.displayNameMap","value":"My Info"},"2":{"id":"DESELFSERVICE_MYINFO_DESC","languageId":"2","referenceId":"SELFSERVICE_MYINFO","referenceType":"ResourceEntity.displayNameMap","value":"Meine Informationen"},"4":{"id":"ESSELFSERVICE_MYINFO_DESC","languageId":"4","referenceId":"SELFSERVICE_MYINFO","referenceType":"ResourceEntity.displayNameMap","value":"Mi Información"},"8":{"id":"RUSELFSERVICE_MYINFO_DESC","languageId":"8","referenceId":"SELFSERVICE_MYINFO","referenceType":"ResourceEntity.displayNameMap","value":"Моя информация"},"9":{"id":"JPSELFSERVICE_MYINFO_DESC","languageId":"9","referenceId":"SELFSERVICE_MYINFO","referenceType":"ResourceEntity.displayNameMap","value":"私の情報"},"10":{"id":"ZHSELFSERVICE_MYINFO_DESC","languageId":"10","referenceId":"SELFSERVICE_MYINFO","referenceType":"ResourceEntity.displayNameMap","value":"我的信息"}},"firstChild":null,"nextSibling":{"id":"SELFSERVICE_MYAPPS","name":"SELFSERVICE_MYAPPS","url":"#","displayName":"My Applications","risk":null,"order":2,"icon":"/openiam-ui-static/images/common/icons/sso.png","isPublic":true,"visible":true,"displayNameMap":{"11":{"id":"PTSELFSERVICE_MYAPPS_DESC","languageId":"11","referenceId":"SELFSERVICE_MYAPPS","referenceType":"ResourceEntity.displayNameMap","value":"Minhas aplicações"},"1":{"id":"SELFSERVICE_MYAPPS_DESC","languageId":"1","referenceId":"SELFSERVICE_MYAPPS","referenceType":"ResourceEntity.displayNameMap","value":"My Applications"},"2":{"id":"DESELFSERVICE_MYAPPS_DESC","languageId":"2","referenceId":"SELFSERVICE_MYAPPS","referenceType":"ResourceEntity.displayNameMap","value":"Meine Applikationen"},"4":{"id":"ESSELFSERVICE_MYAPPS_DESC","languageId":"4","referenceId":"SELFSERVICE_MYAPPS","referenceType":"ResourceEntity.displayNameMap","value":"Mis Aplicaciones"},"8":{"id":"RUSELFSERVICE_MYAPPS_DESC","languageId":"8","referenceId":"SELFSERVICE_MYAPPS","referenceType":"ResourceEntity.displayNameMap","value":"Мои приложения"},"9":{"id":"JPSELFSERVICE_MYAPPS_DESC","languageId":"9","referenceId":"SELFSERVICE_MYAPPS","referenceType":"ResourceEntity.displayNameMap","value":"マイアプリケーション"},"10":{"id":"ZHSELFSERVICE_MYAPPS_DESC","languageId":"10","referenceId":"SELFSERVICE_MYAPPS","referenceType":"ResourceEntity.displayNameMap","value":"我的应用程序"}},"firstChild":null,"nextSibling":{"id":"ACCESSCENTER","name":"ACCESSCENTER","url":null,"displayName":"Access Management","risk":null,"order":3,"icon":"/openiam-ui-static/images/common/icons/access_control.png","isPublic":false,"visible":true,"displayNameMap":{"11":{"id":"PTACCESSCENTER_MENU_DISPLAY","languageId":"11","referenceId":"ACCESSCENTER","referenceType":"ResourceEntity.displayNameMap","value":"Gestão de Acesso"},"1":{"id":"ACCESSCENTER_MENU_DISPLAY","languageId":"1","referenceId":"ACCESSCENTER","referenceType":"ResourceEntity.displayNameMap","value":"Access Management"},"2":{"id":"DEACCESSCENTER_MENU_DISPLAY","languageId":"2","referenceId":"ACCESSCENTER","referenceType":"ResourceEntity.displayNameMap","value":"Zugriffs-Verwaltung"},"4":{"id":"ESACCESSCENTER_MENU_DISPLAY","languageId":"4","referenceId":"ACCESSCENTER","referenceType":"ResourceEntity.displayNameMap","value":"Gestión de Acceso"},"8":{"id":"RUACCESSCENTER_MENU_DISPLAY","languageId":"8","referenceId":"ACCESSCENTER","referenceType":"ResourceEntity.displayNameMap","value":"Управление доступом"},"9":{"id":"JPACCESSCENTER_MENU_DISPLAY","languageId":"9","referenceId":"ACCESSCENTER","referenceType":"ResourceEntity.displayNameMap","value":"アクセス管理"},"10":{"id":"ZHACCESSCENTER_MENU_DISPLAY","languageId":"10","referenceId":"ACCESSCENTER","referenceType":"ResourceEntity.displayNameMap","value":"访问权限管理"}},"firstChild":{"id":"SELF_QUERYUSER","name":"SELF_QUERYUSER","url":"/selfservice-ext/usersSub.html","displayName":"Manage User","risk":null,"order":4,"icon":null,"isPublic":false,"visible":true,"displayNameMap":{"11":{"id":"PTSELF_QUERYUSER_MENU_DISPLAY","languageId":"11","referenceId":"SELF_QUERYUSER","referenceType":"ResourceEntity.displayNameMap","value":"Gerir utilizador"},"1":{"id":"SELF_QUERYUSER_MENU_DISPLAY","languageId":"1","referenceId":"SELF_QUERYUSER","referenceType":"ResourceEntity.displayNameMap","value":"Manage User"},"2":{"id":"DESELF_QUERYUSER_MENU_DISPLAY","languageId":"2","referenceId":"SELF_QUERYUSER","referenceType":"ResourceEntity.displayNameMap","value":"Benutzer verwalten"},"4":{"id":"ESSELF_QUERYUSER_MENU_DISPLAY","languageId":"4","referenceId":"SELF_QUERYUSER","referenceType":"ResourceEntity.displayNameMap","value":"Administrar Usuaruio"},"8":{"id":"RUSELF_QUERYUSER_MENU_DISPLAY","languageId":"8","referenceId":"SELF_QUERYUSER","referenceType":"ResourceEntity.displayNameMap","value":"Управление пользователем"},"9":{"id":"JPSELF_QUERYUSER_MENU_DISPLAY","languageId":"9","referenceId":"SELF_QUERYUSER","referenceType":"ResourceEntity.displayNameMap","value":"ユーザーを管理"},"10":{"id":"ZHSELF_QUERYUSER_MENU_DISPLAY","languageId":"10","referenceId":"SELF_QUERYUSER","referenceType":"ResourceEntity.displayNameMap","value":"管理用户"}},"firstChild":null,"nextSibling":null,"urlParams":null,"entitlementType":null},"nextSibling":{"id":"SELFCENTER","name":"SELFCENTER","url":null,"displayName":"Self Service Center","risk":null,"order":5,"icon":"/openiam-ui-static/images/common/icons/user_manager.png","isPublic":true,"visible":true,"displayNameMap":{"11":{"id":"PTSELFCENTER_MENU_DISPLAY","languageId":"11","referenceId":"SELFCENTER","referenceType":"ResourceEntity.displayNameMap","value":"Próprio Centro de Serviços"},"1":{"id":"SELFCENTER_MENU_DISPLAY","languageId":"1","referenceId":"SELFCENTER","referenceType":"ResourceEntity.displayNameMap","value":"Self Service Center"},"2":{"id":"DESELFCENTER_MENU_DISPLAY","languageId":"2","referenceId":"SELFCENTER","referenceType":"ResourceEntity.displayNameMap","value":"Self-Service Center"},"4":{"id":"ESSELFCENTER_MENU_DISPLAY","languageId":"4","referenceId":"SELFCENTER","referenceType":"ResourceEntity.displayNameMap","value":"Centro de AutoServicio"},"8":{"id":"RUSELFCENTER_MENU_DISPLAY","languageId":"8","referenceId":"SELFCENTER","referenceType":"ResourceEntity.displayNameMap","value":"Центр самообслуживания"},"9":{"id":"JPSELFCENTER_MENU_DISPLAY","languageId":"9","referenceId":"SELFCENTER","referenceType":"ResourceEntity.displayNameMap","value":"セルフサービスセンター"},"10":{"id":"ZHSELFCENTER_MENU_DISPLAY","languageId":"10","referenceId":"SELFCENTER","referenceType":"ResourceEntity.displayNameMap","value":"自助服务中心"}},"firstChild":{"id":"8ac895355afa2d32015afb3a4ed90d38","name":"Create_Sub_User","url":"/selfservice-ext/createSubUser.html","displayName":"Create Sub User","risk":null,"order":1,"icon":null,"isPublic":false,"visible":true,"displayNameMap":{"1":{"id":"8ac895355afa2d32015afb3a4ee60d3c","languageId":"1","referenceId":"8ac895355afa2d32015afb3a4ed90d38","referenceType":"ResourceEntity.displayNameMap","value":"Create Sub User"}},"firstChild":null,"nextSibling":{"id":"CHNGPSWD","name":"CHNGPSWD","url":"/selfservice/redirectChallengeResponse.html","displayName":"Change Password","risk":null,"order":4,"icon":null,"isPublic":true,"visible":true,"displayNameMap":{"11":{"id":"PTCHNGPSWD_MENU_DISPLAY","languageId":"11","referenceId":"CHNGPSWD","referenceType":"ResourceEntity.displayNameMap","value":"Alterar Password"},"1":{"id":"CHNGPSWD_MENU_DISPLAY","languageId":"1","referenceId":"CHNGPSWD","referenceType":"ResourceEntity.displayNameMap","value":"Change Password"},"2":{"id":"DECHNGPSWD_MENU_DISPLAY","languageId":"2","referenceId":"CHNGPSWD","referenceType":"ResourceEntity.displayNameMap","value":"Passwort ändern"},"4":{"id":"ESCHNGPSWD_MENU_DISPLAY","languageId":"4","referenceId":"CHNGPSWD","referenceType":"ResourceEntity.displayNameMap","value":"Cambiar Password"},"8":{"id":"RUCHNGPSWD_MENU_DISPLAY","languageId":"8","referenceId":"CHNGPSWD","referenceType":"ResourceEntity.displayNameMap","value":"Изменить пароль"},"9":{"id":"JPCHNGPSWD_MENU_DISPLAY","languageId":"9","referenceId":"CHNGPSWD","referenceType":"ResourceEntity.displayNameMap","value":"パスワードを変更"},"10":{"id":"ZHCHNGPSWD_MENU_DISPLAY","languageId":"10","referenceId":"CHNGPSWD","referenceType":"ResourceEntity.displayNameMap","value":"更改口令"}},"firstChild":null,"nextSibling":{"id":"IDQUEST","name":"IDQUEST","url":"/selfservice/challengeResponse.html","displayName":"Security Questions","risk":null,"order":5,"icon":null,"isPublic":true,"visible":true,"displayNameMap":{"1":{"id":"IDQUEST_MENU_DISPLAY","languageId":"1","referenceId":"IDQUEST","referenceType":"ResourceEntity.displayNameMap","value":"Security Questions"}},"firstChild":null,"nextSibling":{"id":"PROFILE_PIC","name":"PROFILE_PIC","url":"/selfservice/editProfilePic.html","displayName":"Edit Your Profile Picture","risk":null,"order":8,"icon":null,"isPublic":true,"visible":true,"displayNameMap":{"11":{"id":"PTEN_PROFILE_PIC_DESC","languageId":"11","referenceId":"PROFILE_PIC","referenceType":"ResourceEntity.displayNameMap","value":"Edite a sua imagem de perfil"},"1":{"id":"EN_PROFILE_PIC_DESC","languageId":"1","referenceId":"PROFILE_PIC","referenceType":"ResourceEntity.displayNameMap","value":"Edit Your Profile Picture"},"2":{"id":"DE_PROFILE_PIC_DESC","languageId":"2","referenceId":"PROFILE_PIC","referenceType":"ResourceEntity.displayNameMap","value":"Edit Your Profile Picture"},"4":{"id":"ES_PROFILE_PIC_DESC","languageId":"4","referenceId":"PROFILE_PIC","referenceType":"ResourceEntity.displayNameMap","value":"Edit Your Profile Picture"},"8":{"id":"RU_PROFILE_PIC_DESC","languageId":"8","referenceId":"PROFILE_PIC","referenceType":"ResourceEntity.displayNameMap","value":"Edit Your Profile Picture"},"9":{"id":"JP_PROFILE_PIC_DESC","languageId":"9","referenceId":"PROFILE_PIC","referenceType":"ResourceEntity.displayNameMap","value":"Edit Your Profile Picture"},"10":{"id":"ZHEN_PROFILE_PIC_DESC","languageId":"10","referenceId":"PROFILE_PIC","referenceType":"ResourceEntity.displayNameMap","value":"编辑你的个人图片"}},"firstChild":null,"nextSibling":null,"urlParams":null,"entitlementType":null},"urlParams":null,"entitlementType":null},"urlParams":null,"entitlementType":null},"urlParams":null,"entitlementType":null},"nextSibling":{"id":"8ac895355affb65b015b0fa94891160a","name":"Reports","url":"#","displayName":"Report","risk":null,"order":7,"icon":null,"isPublic":true,"visible":true,"displayNameMap":{"1":{"id":"8ac895355affb65b015b0fa9489e160e","languageId":"1","referenceId":"8ac895355affb65b015b0fa94891160a","referenceType":"ResourceEntity.displayNameMap","value":"Report"}},"firstChild":null,"nextSibling":{"id":"8ac88ef05fb5443e015fc9e4686546c5","name":"Help","url":"/openiam-ui-static/docs/web/eConnectAccessHelpDocument.html","displayName":"Help","risk":null,"order":8,"icon":null,"isPublic":true,"visible":true,"displayNameMap":{"1":{"id":"8ac88ef05fb5443e015fc9e4687146c9","languageId":"1","referenceId":"8ac88ef05fb5443e015fc9e4686546c5","referenceType":"ResourceEntity.displayNameMap","value":"Help"}},"firstChild":null,"nextSibling":null,"urlParams":null,"entitlementType":null},"urlParams":null,"entitlementType":null},"urlParams":null,"entitlementType":null},"urlParams":null,"entitlementType":null},"urlParams":null,"entitlementType":null},"urlParams":null,"entitlementType":null},"nextSibling":null,"urlParams":null,"entitlementType":null};
+			OPENIAM.ENV.initialMenu = null;
+			OPENIAM.ENV.Context = "/selfservice";
+			OPENIAM.ENV.OuterFrameContextPath = "/selfservice";
+			OPENIAM.ENV.FrameURL = null;
+			OPENIAM.ENV.CheckActivitiTasks = true;
+		</script>
+
+<script type="text/javascript"
+	src="/openiam-ui-static/assets/scripts/bootstrap.min.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE"></script>
+	<style>
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+	background-color: transparent !important;
+	border-color: #337ab7
+}
+</style>
+</head>
+<body>
+	<div id="top">
+		<div class="wrapper">
+			<div id="header">
+				<div id="logo">
+					<a href="" class="logo slogo">Openiam</a>
+				</div>
+				<div id="right-header">
+					<div id="notification">
+						<div class="row">Welcome&nbsp;TUNGA FILLING STATTION TALCHER</div>
+						<div id="notifications"></div>
+					</div>
+					<div id="logout">
+						<a href="/idp/logout.html" class="redBtn">Logout</a>
+					</div>
+					
+						<div id="lang-header">
+							<ul id="lang"
+								lng="en_US">
+								<li>
+										
+											<a class="first" onclick="javascript:return false;"
+												href="javascript:void(0);"><span
+												style="background: url('/openiam-ui-static/images/common/flags/us.gif') no-repeat scroll 0 0">&nbsp;</span>English</a>
+										
+									
+
+									<ul>
+										
+											
+												<li><a href="javascript:void(0);"
+													onclick="OPENIAM.Language.switchLanguage('lang', 'en_US');"><span
+														style="background: url('/openiam-ui-static/images/common/flags/us.gif') no-repeat scroll 0 0">&nbsp;</span>English</a></li>
+											
+										
+									</ul></li>
+							</ul>
+						</div>
+					
+				</div>
+			</div>
+			<div id="nav"></div>
+			<div id="breadcrumb"></div>
+			<div id="newsScroller" style="font-weight: bold;">
+				<marquee hspace="5%">
+					<div id="scrollMessage"></div>
+				</marquee>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" style="position:absolute;margin-left:100px">
+		<div class="row">
+			<main role="main"
+				class="col-md-9 ml-sm-auto col-lg-10 p-0 custom-main">
+			<div class="row">
+				<div class="col-md-12 p-0">
+					<div class="row">
+						<div class="col-md-2 p-0">
+							<nav class="defaultFixedNav">
+							<ul class="nav">
+								<li class="dropdown user-sec"><a href="#"
+									class="user-link dropdown-toggle" data-toggle="dropdown"
+									aria-haspopup="true" aria-expanded="false"></a></li>
+							</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			</main>
+		</div>
+	</div>
+	 <div id="middle">
+            <div class="wrapper">
+                  <div id="submenu" style="display: none"></div>
+                  <div id="leftshadow"></div>
+                  <div id="rightshadow"></div>
+                  <div id="content">
+                        <iframe id="contentFrame" name="contentFrame" frameborder="0" src="" scrolling="yes" ></iframe>
+                  </div>
+            </div>
+      </div>
+	<div id="bottom">
+		<div class="wrapper">
+			<div id="footer">
+				<div id="copy">Copyright Bharat Petroleum Corporation
+					Limited. All Rights Reserved  |
+					
+					<a href="/openiam-ui-static/imagerotator/HostedDocs/privacyPolicy.html" target="contentFrame" color="#f7f44d"><span style='padding-left:5px;padding-right:20px'>Privacy Policy</span></a>
+					</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

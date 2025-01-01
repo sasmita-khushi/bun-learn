@@ -1,0 +1,407 @@
+
+
+<!-- added on 17jan2019 -->
+
+<!-- added on 17jan2019 -->
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>eConnect- Login</title>
+<link rel="shortcut icon" type="favicon" href="/openiam-ui-static/images/common/favicon.ico?3.5.RELEASE?3.5.RELEASE?3.5.RELEASE?3.5.RELEASE?3.6.RELEASE?4.0.RELEASE" />
+<link href="/openiam-ui-static/css/common/log-layout.css?3.5.RELEASE?3.5.RELEASE?3.5.RELEASE?3.5.RELEASE?3.6.RELEASE?4.0.RELEASE" rel="stylesheet" type="text/css" media="screen" />
+<link href="/openiam-ui-static/css/common/res-layout.css?3.5.RELEASE?3.5.RELEASE?3.5.RELEASE?3.5.RELEASE?3.6.RELEASE?4.0.RELEASE" rel="stylesheet" type="text/css" media="screen" />
+<link href="/openiam-ui-static/js/common/jquery/css/smoothness/jquery-ui-1.9.1.custom.css?3.6.RELEASE?4.0.RELEASE" rel="stylesheet" type="text/css" />
+
+<!--this is from IDP header.jsp -->
+	<!-- <link href="/openiam-ui-static/css/common/style.css?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE" rel="stylesheet" type="text/css" media="screen" />
+		<link href="/openiam-ui-static/css/common/style.client.css?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE" rel="stylesheet" type="text/css" />
+	<link href="/openiam-ui-static/css/webconsole/login.css?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/openiam-ui-static/css/common/hideShowPassword.css?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE" rel="stylesheet" type="text/css"/>
+	<link href="/openiam-ui-static/js/common/jquery/css/smoothness/jquery-ui-1.9.1.custom.css?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE" rel="stylesheet" type="text/css" />
+	<link href="/openiam-ui-static/plugins/tooltipster/css/tooltipster.css?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE" rel="stylesheet" type="text/css" media="screen" />
+	 -->
+	<!--JS library -->
+    <script type="text/javascript" src="/openiam-ui-static/assets/scripts/jquery-3.5.1.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE"></script>
+    <script type="text/javascript" src="/openiam-ui-static/assets/scripts/jquery-migrate-3.3.2.min.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE"></script>
+
+	<script type="text/javascript" src="/openiam-ui-static/js/common/jquery/jquery-ui-1.9.1.custom.min.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE"></script>
+	<script type="text/script" src="/openiam-ui-static/assets/scripts/bootstrap.min.js?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE"></script>	
+	<script type="text/javascript" src="/openiam-ui-static/_dynamic/openiamResourceBundle.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE"></script>
+	<script type="text/javascript" src="/openiam-ui-static/js/common/jquery.corner.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE"></script>
+	<script type="text/javascript" src="/openiam-ui-static/js/common/jquery.boxshadow.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE"></script>
+	<script type="text/javascript" src="/openiam-ui-static/js/common/openiam.common.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE"></script>
+	<script type="text/javascript" src="/openiam-ui-static/plugins/placeholder/jquery.placeholder.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE"></script>
+    <script type="text/javascript" src="/openiam-ui-static/js/common/json/json.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE"></script>
+	<script type="text/javascript" src="/openiam-ui-static/plugins/tooltipster/js/jquery.tooltipster.min.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE"></script>
+
+	<script type="text/javascript" src="/openiam-ui-static/js/idp/aes.js?3.5.RELEASE?3.5.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE"></script>
+	<script type="text/javascript" src="/openiam-ui-static/js/idp/pbkdf2.js?3.5.RELEASE?3.5.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?4.0.RELEASE"></script>
+	
+<script type="text/javascript"
+	src="/openiam-ui-static/js/common/login.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE"></script>
+<script type="text/javascript"
+	src="/openiam-ui-static/js/common/browser.close.logout.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE"></script>
+<script type="text/javascript"
+	src="/openiam-ui-static/js/idp/login.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE"></script>
+<script type="text/javascript">
+	OPENIAM = window.OPENIAM || {};
+	OPENIAM.ENV = window.OPENIAM.ENV || {};
+	OPENIAM.ENV.PostbackURL = "";
+</script>
+<script type="text/javascript"
+	src="/openiam-ui-static/js/idp/aes.js?3.5.RELEASE?3.5.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE"></script>
+<script type="text/javascript"
+	src="/openiam-ui-static/js/idp/pbkdf2.js?3.5.RELEASE?3.5.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE"></script>
+<script type="text/script"
+	src="/openiam-ui-static/assets/scripts/bootstrap.min.js?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE?3.6.RELEASE"></script>
+<script type="text/javascript">
+	function resetCaptcha() {
+		var d = new Date();
+		var n = d.getTime();
+		$("#captcha").attr("src", "/idp/pub/login/captcha.html?random=" + n);
+	}
+	var results = new RegExp('[\?&]postbackURL=([^&#]*)')
+	.exec(window.location.href);	
+	if (results == null) {
+	OPENIAM.ENV.PostbackURL = "/selfservice/";
+	} else {
+	OPENIAM.ENV.PostbackURL = results[1];
+	}
+	if (self != top) {
+		var outerFrameContextPath = parent.OPENIAM.ENV.OuterFrameContextPath;
+		if (outerFrameContextPath != null && outerFrameContextPath != undefined) {
+			var loginURL = window.location.pathname;
+			var postbackURL = outerFrameContextPath
+					+ "?frameURL="
+					+ encodeURIComponent(OPENIAM.ENV.PostbackURL.replace(
+							/&menuLocal=[a-z]{2}_[A-Z]{2}/, ''));
+			loginURL += "?postbackURL=" + encodeURIComponent(postbackURL);
+			top.window.location = loginURL;
+		} else {
+			top.location = self.location;
+		}
+	} else {
+		document.documentElement.style.visibility = 'visible';
+	}
+	$(function() {
+		var messages11 = "";
+		$.ajax({
+			url : "/selfservice-ext/pub/notification.html?type=G",
+			type : "GET",
+			data : "",
+			dataType : "json",
+			success : function(data, textStatus, jqXHR) {
+				if (data != null) {
+					if (data.messages != null && data.messages != "") {
+						$.each(data.messages, function(idx, val) {
+							//console.log(val);
+							messages11 +=  val + "<br>";
+						});
+					}
+				}
+				if (messages11.trim() != "") {
+					OPENIAM.Modal.Notification(messages11);
+				}
+			},
+			error : function(jqXHR, textStatus, errorThrown) {				
+			}
+		});
+		$('input').keypress(function(e) {
+			if (e.which == 13) {
+				onClickSubmit();
+				return false;
+			}
+		});
+	});
+	function getCookie(cname) {
+	    var name = cname + "=";
+	    var ca = document.cookie.split(';');
+	    for(var i = 0; i < ca.length; i++) {
+	        var c = ca[i];
+	        while (c.charAt(0) == ' ') {
+	            c = c.substring(1);
+	        }
+	        if (c.indexOf(name) == 0) {
+	            return c.substring(name.length, c.length);
+	        }
+	    }
+	    return "";
+	}
+
+	function setTmpCookie (key) {
+		// to prevent session expiry issue in change password.
+			var d = new Date();
+			d.setTime(d.getTime() + (60 * 1000));
+			var expires = "expires="+d.toUTCString();
+			if(getCookie('LOGIN_PLACEHOLDER') == '') {
+				document.cookie = "LOGIN_PLACEHOLDER=" + key + ";" + expires + ";path=/";
+			}
+	}
+</script>
+<style>
+
+.ui-dialog {
+	left: 30% !important;
+	top: 30% !important;
+}
+
+#progressMessage {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 50%;
+	z-index: 3000;
+}
+
+#activityIndicator {
+	height: 20px;
+	width: 200px;
+	-webkit-background-size: 32px 32px;
+	-o-background-size: 32px 32px;
+	-moz-background-size: 32px 32px;
+	background-size: 200px 20px;
+	margin: 0px auto;
+	background-image: url(/openiam-ui-static/images/common/ajax-loader.gif);
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+
+#log-header, #log-foot {
+	display: none;
+}
+
+.cap-img {
+	width: 100px;
+	height: auto;
+}
+
+.cap-img img {
+	max-width: 100%;
+	height: auto;
+}
+
+.refresh-btn {
+	right: 52px !important;
+}
+
+.captcha-img {
+	right: 78px !important;
+}
+
+@media screen and (max-width:768px) {
+	.refresh-btn {
+		right: 20px !important;
+	}
+}
+.error {
+    font-size: 15px;
+    text-align: center;
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    padding: 5px 0px 5px 0px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+</style>
+</head>
+<body>
+	  <!--<div id="log-header" >
+  <div id="nav-header">
+        <a href="http://www.cymmetri.com/company/about-cymmetri/">About CYMMETRI</a>
+    </div>
+    <div id="copy-header">
+        CYMMETRI is the most comprehensive Identity and Access Management solution based on a professional open source model.
+    </div>
+	
+</div>-->
+<style>
+
+.log-top
+{
+	min-height: 75px;
+	clear: both;
+	border-bottom:5px solid #007ec3;
+	background-color:#FFF;
+}
+
+.top-logo
+{
+	width:302px;
+	height: 70px;
+	float: left;
+}
+.top-logo img 
+{ 
+	max-width:100%;
+	height:auto;
+	max-height:100%;
+}
+.login-top-right
+{
+	width: 160px;
+	height: 70px;
+	float: right;
+}
+
+.login-top-right img
+{
+	max-width:100%;
+	height:auto;
+	max-height:100%;
+}
+.con-sec-box
+{
+	margin: 0 auto;
+	width:1170px;
+}
+
+</style>
+    <header> 
+		<div class="log-top">
+			<div class="con-sec-box">
+				<div class="top-logo"><a href="/selfservice-ext/pub/login.html"><img src="../../../../openiam-ui-static/images/common/login-logo.png"></a></div>
+				<div class="login-top-right"><a href="https://www.bharatpetroleum.com/smartline.aspx" target="_blank"><img src="../../../../openiam-ui-static/images/common/logo-sl.png"></a></div>
+			</div>
+		</div>
+	</header>
+	<section>
+	<div class="banner-con">
+		<div class="login-out-con">
+			<div id="progressMessage"
+				style="display: none; padding: 0px; height: 180px; width: 100%;">
+				<div id="activityIndicator">&nbsp;</div>
+			</div>
+			<form id="login-form" name="login" autocomplete="off">
+				<div id="error" style="display: none"></div>
+				<div class="clear-div"></div>
+				<div class="log-tb-con">
+					<input type="text" autocomplete="off" name="login" id="principal"
+						class="user" placeholder="User Id" maxlength="14" />
+				</div>
+				<div class="log-tb-con">
+					<input type="password" autocomplete="off" name="password"
+						id="input_password" placeholder="Password" class="pwd"
+						maxlength="14" />
+					
+					<input type="hidden" name="salt" id="salt" value="" placeholder = "salt"/> <input
+						type="hidden" name="iv" id="iv" value="" placeholder = "salt"/>
+					
+				</div>
+				<div class="log-tb-con">
+					<div class="captcha-img">
+						<img alt="" id="captcha" src="/idp/pub/login/captcha.html" />
+					</div>
+					<input type="text" autocomplete="off" name="captcha" id="captcha"
+						placeholder="Captcha Code" class="captcha" maxlength="8" /> <a
+						href="javascript:resetCaptcha();" class="refresh-btn"><img
+						src="../../../../openiam-ui-static/images/common/refresh-btn.png?3.5.RELEASE"></a>
+				</div>
+				<div class="log-btn-con">
+					<input type="submit" class="login-btn" value="Login" />
+				</div>
+			</form>
+			<div class="clear-div"></div>
+			<div class="btns-con">
+				<ul>
+					<li><a class="btn btn-primary btn-xs" id="selfRegistration"
+						href="/selfservice-ext/pub/selfRegistration.html">Self
+							Registration</a></li>
+					<li><a id="unlockPswd" class="btn btn-primary btn-xs"
+						href="/idp/unlockPassword.html">Trouble logging in?</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	</section>
+	<section>
+	<div class="banner-bottom">
+		<div class="con-sec-box">
+			<div class="banner-bottom-left">
+				<div class="banner-bottom-inner">
+					<div class="banner-bot-left-con">
+						<img
+							src="../../../../openiam-ui-static/images/common/link-img.png">
+					</div>
+					<div class="banner-bot-left-links">
+						<h4>Useful Links</h4>
+						<ul>
+							<li><a href="https://www.bharatpetroleum.com/bpclsaptc/"
+								target="_blank">BPCL SAP Training centre</a></li>
+							<li><a href="http://mylpg.in/" target="_blank">myLPG.in</a></li>
+							<li><a href="https://www.bharatpetroleum.com"
+								target="_blank">Corporate Site</a></li>
+							<li><a href="https://www.ebharatgas.com" target="_blank">eBharatgas</a></li>
+							<li><a href="http://www.mysmartfleet.com" target="_blank">SmartFleet</a></li>
+							<li><a href="http://www.petrobonus.com" target="_blank">PetroBonus</a></li>
+							<li><a href="https://ebiz.bpc.co.in/mobeconnect.htm"
+								target="_blank">Mobile App For Partners</a></li>
+							<li><a
+								href="https://www.bharatpetroleum.com/feedback-complaint.aspx"
+								target="_blank">Feedback</a></li>
+							<li><a href="https://rsupport.bharatpetroleum.in/"
+								target="_blank">Bomgar Link</a></li>
+							<li><a href="http://petroleum.nic.in/" target="_blank">Ministry
+									of Petroleum & Natural Gas</a></li>
+						</ul>
+					</div>
+					<div class="clear-div"></div>
+				</div>
+			</div>
+			<div class="banner-bottom-right">
+				<div class="banner-bottom-inner">
+					<h4>BPCL SAP Training Centre</h4>
+					<div class="clear-div"></div>
+					<a href="https://www.bharatpetroleum.com/bpclsaptc/"
+						target="_blank"><img
+						src="../../../../openiam-ui-static/images/common/sap-partner.png"></a>
+				</div>
+			</div>
+			<div class="clear-div"></div>
+		</div>
+	</div>
+	</section>
+	<section>
+	<div class="footer-con">
+		<div class="con-sec-box">
+			<div class="footer-txt">Copyright Bharat Petroleum
+				Corporation Limited. All Rights Reserved  |
+				
+				<a href="/openiam-ui-static/imagerotator/HostedDocs/privacyPolicy.html" target="contentFrame" color="#f7f44d"><span style='padding-left:5px;padding-right:20px'>Privacy Policy</span></a>
+				| <a href="/openiam-ui-static/imagerotator/HostedDocs/termsOfUse.html" target="contentFrame"><span style='padding-left:5px;padding-right:20px'>Terms of Use</span></a>
+			</div>
+			<div class="clear-div"></div>
+			
+			<div id="msgModel" tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front" aria-describedby="dialog" aria-labelledby="ui-id-1" style="height: auto; width: 100%; top: 85% !important; left: 0% !important; display: none; position: fixed;">
+				<div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix">
+					<span id="msgModelTitle" class="ui-dialog-title"></span>
+					<button type="button" class="ui-dialog-titlebar-close" id="msgModelClose" data-dismiss="msgModel" aria-hidden="true">&times;</button>
+				</div>
+				<div id="dialog" class="ui-dialog-content ui-widget-content" style="width: auto; min-height: 62.8125px; max-height: none; height: auto;">
+					<div>
+						<!-- <div class="" style="margin: 20px; padding-left: 160px;" id="msgModelMessage"></div> -->
+						<div id="msgModelMessage" style="text-align: center; ">By using this site you agree to  eConnect.bpcl.in’s use of cookies to give you a personalized experience. Please read the <a href="/openiam-ui-static/imagerotator/HostedDocs/cookiePolicy.html" target="_blank" style="color:red;" >Cookie Policy</a> for more information.</div>
+						
+						<div class="d-flex gs8 ai-stretch fd-column sm:fd-row justify-content-center" style="text-align: center; ">
+			                        <input type="button" id="acceptCookies" value="Accept" class="btn btn-sm btn-primary auto-width pull-right" style="height: 30px; width: 100px; background-color:#4be17f; color:black;" >
+			
+			                    </div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+	</section>
+</body>
+</html>

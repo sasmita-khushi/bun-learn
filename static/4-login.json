@@ -1,0 +1,18 @@
+{
+  "status": 200,
+  "errorList": null,
+  "redirectURL": "/selfservice",
+  "successToken": null,
+  "successMessage": null,
+  "contextValues": null,
+  "objectId": null,
+  "possibleErrors": null,
+  "passwordExpired": false,
+  "userId": "8ac88ef05eadd036015ee76c7ac4374b",
+  "unlockURL": null,
+  "tokenInfo": {
+    "authToken": "ATPaBpJMBgOrCCgFjVrz1UV+1oYCCClae1ojRRtADl/K8GrBxB11A83w6cvRADQz0aHmz64nw9jELNVcFs7VucSKRtMG8BQ1LTQ6L4Z3dtuQgJMuBlGcbckM+bEZDfBaeF+TQlai8U3N20otwJrvKi2qcezpawD+LB+7JW4ROFgH6lOs4ZtdYRqHj8dhIRFhARSfIY0EOKQXTP8o6vhyVJceZ+kFvksO6J6ezKvYtGgnA8IhuOd1JXBflOaUslic",
+    "timeToLiveSeconds": -1
+  },
+  "error": false
+}

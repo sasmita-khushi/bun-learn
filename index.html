@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Form</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      function foo() {
+        let formData = new FormData();
+        formData.append("name", "Sasmita");
+        formData.append("age", 20);
+        // skiping profilePicture blob intenstionally to cause error
+
+        fetch("/action", {
+          method: "POST",
+          body: formData,
+        })
+          .then((res) => {
+            console.log(res);
+            console.log(res.text());
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      }
+
+      foo();
+    </script>
+  </body>
+</html>
