@@ -21,7 +21,8 @@ Bun.serve({
         );
         let file = data.get("pic");
         console.log(file);
-        if (!file.size) {
+
+        if (!file) {
           return new Response("attach  a file to be uploded", { status: 400 });
         } else {
           await Bun.write(`x/${file.name}`, file!);

@@ -7,12 +7,35 @@
   </head>
   <body>
     <h2>Hii khushi</h2>
-    <form action="/data" method="post" enctype="multipart/form-data">
+    <!-- <form action="/data" method="post" enctype="multipart/form-data">
       <input type="text" name="name" placeholder="Enter your name" />
       <input type="text" name="age" placeholder="Enter your age" />
       <input type="text" name="email" placeholder=" Enter your email" />
-      <input type="file"  name= "pic" placeholder="upload file here"/>
+      <input type="file" name="pic" placeholder="upload file here" />
       <button type="submit">Submit</button>
-    </form>
+    </form> -->
+    <script type="text/javascript">
+      function foo() {
+        let formData = new FormData();
+        formData.append("name", "Sasmita");
+        formData.append("age", 20);
+        formData.append("email","sas@gmail.com")
+        // skiping profilePicture blob intenstionally to cause error
+
+        fetch("/data", {
+          method: "POST",
+          body: formData,
+        })
+          .then((res) => {
+            console.log(res);
+            console.log(res.text());
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      
+      }
+      foo();
+    </script>
   </body>
 </html>
