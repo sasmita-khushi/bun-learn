@@ -1,5 +1,6 @@
 import { EventEmitter } from "events";
 import MyEventEmitter from "./my-eventemitter.js";
+//import My_eventEmitter from "./revise.js";
 
 class FireDetector extends MyEventEmitter {
   constructor() {
