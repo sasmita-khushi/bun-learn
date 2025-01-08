@@ -28,3 +28,6 @@ me.on("bar", () => {
 me.emit("foo");
 me.emit("foo", "some text");
 me.emit("bar");
+
+
+//hello
