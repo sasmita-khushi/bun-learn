@@ -15,7 +15,8 @@ import fs from "node:fs";
         }
         console.log(data.toString());
     })
-}})
+}
+})
 
 
     

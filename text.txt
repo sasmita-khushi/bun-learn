@@ -1,1 +1,1 @@
-"Hello Khushi" 
+write to file ./foo.txt hello manas how are you
