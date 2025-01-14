@@ -5,10 +5,7 @@ fs.open("./data.txt", "w", (err, fd) => {
         throw err;
     }
     for (let i = 0; i < 1000000; i++) {
-        fs.write(fd, `${i} `, (err, bytesWriteen, buffer) => {
-            //console.log(bytesWriteen)
-            //console.log("done writing ", buffer.toString())
-        })
+        fs.writeSync(fd, `${i} `)
     }
     fs.close(fd, (err) => {
         if (err) {
