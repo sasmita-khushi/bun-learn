@@ -1,4 +1,4 @@
-console.time("hello");
+console.time("time");
 
 const file = Bun.file("./text.txt");
 const writer = file.writer();
@@ -10,4 +10,4 @@ for (let i = 0; i < 1000000; i++) {
 
 writer.end();
 
-console.timeEnd("hello");
+console.timeEnd("time");

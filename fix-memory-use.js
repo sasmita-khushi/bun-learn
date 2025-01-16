@@ -10,22 +10,22 @@ const wr = fileHandle.createWriteStream();
 
 let i = 0;
 function writeMany() {
-    while (i < 100000) {
-        if (i === 9999) {
-            return wr.end(`${i} `)
-        }
-        if (!wr.write(`${i} `)) {
-            break;
-        } else {
+    while (i < 1000000) {
+        let sucess = wr.write(`${i}`)
+        if (sucess) {
             i++;
+        } else {
+            return;
         }
 
     }
+    wr.close();
 }
 
 writeMany();
 wr.on("drain", () => {
-    //console.log("drained---")
+    console.log(`${i} drained`)
+    i++;
     writeMany();
 })
 
