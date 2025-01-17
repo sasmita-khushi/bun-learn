@@ -1,8 +1,6 @@
 import fs from "node:fs/promises";
-import { buffer } from "node:stream/consumers";
 
-
-let fileHandler = await fs.open("./text.txt", "r")
+let fileHandler = await fs.open("./text.txt", "r");
 //let stats = await fileHandler.stat();
 //let data = await fileHandler.readFile({ encoding: "utf-8" });
 // fileHandler.close();
@@ -25,3 +23,4 @@ const timer = setInterval(async () => {
 }, 500)
 
 //await fileHandler.close();
+

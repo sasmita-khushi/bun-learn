@@ -10,8 +10,8 @@ const wr = fileHandle.createWriteStream();
 
 let i = 0;
 function writeMany() {
-    while (i < 1000000) {
-        let sucess = wr.write(`${i}`)
+    while (i < 100) {
+        let sucess = wr.write(`${i} `)
         if (sucess) {
             i++;
         } else {
