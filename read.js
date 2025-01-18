@@ -6,8 +6,6 @@ import fs from "node:fs";
 const rs = fs.createReadStream("./text.txt", { highWaterMark: 17, encoding: "utf-8" });
 const ws = fs.createWriteStream("./y.txt");
 
-
-
 let leftOver = "";
 
 rs.on("data", (chunk) => {

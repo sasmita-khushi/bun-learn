@@ -9,7 +9,7 @@ import fs from "node:fs"
 // });
 
 
-// READ A TEXT FILE WITH SPECIfied Encoding
+// READ A TEXT FILE WITH SPECIFIED ENCODING
 
 // fs.readFile("./y.txt", "utf-8", (err, data) => {
 //     if (err) {
@@ -18,6 +18,10 @@ import fs from "node:fs"
 //     }
 //     console.log("file content:", data)
 // })
+
+
+
+//READ A JSON FILE WITH SPECIFIED ENCODING
 
 fs.readFile("./a.json", "utf-8", (err, data) => {
     if (err) {

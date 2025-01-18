@@ -1,4 +1,5 @@
 import fs from "node:fs";
+
 console.time("time")
 fs.open("./data.txt", "w", (err, fd) => {
     if (err) {
