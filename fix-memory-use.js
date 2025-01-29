@@ -5,7 +5,7 @@ const fileHandle = await fs.open("./text.txt", "w");
 
 const wr = fileHandle.createWriteStream();
 
-//console.log(wr.writableHighWaterMark);
+console.log(wr.writableHighWaterMark);
 //console.log(wr.writableLength);
 
 let i = 0;
