@@ -15,8 +15,8 @@ let i = 0;
 
 ws.on("finish", () => {
     console.timeEnd("time");
-}
-)
+});
+
 function loop() {
     while (i < 1000000) {
 
@@ -26,10 +26,11 @@ function loop() {
         if (!success) {
             // console.log("not success", i);
             break;
+            
         } else {
             i++;
             if (i === 1000000) {
-                ws.end("last write");
+                ws.end("last write"); //this is our last write;
 
             }
         }

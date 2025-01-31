@@ -1,3 +1,4 @@
+//COPY FILE WITHOUT USING STREAM
 import fs from "node:fs/promises";
 
 const destFile = await fs.open("./y.txt", "w");
